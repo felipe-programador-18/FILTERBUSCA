@@ -11,6 +11,13 @@ const Workpense = Mapreduce.map((Mapreduce) =>
      <li> {Mapreduce*2}</li>
 )
 
+
+const Pure = [10,20,30,40,50,60]
+const Decide = Pure.map((Pure) => 
+  <li> {Pure*5} </li>
+)
+
+
 function App() {
   const [data, setdata] = useState(Url)
   const [busca, setbusca] = useState('')
@@ -50,7 +57,7 @@ function App() {
         
        </ul>
         <ul> {Workpense} </ul>
-          
+        <ul> {Decide} </ul>  
           {JSON.stringify(data)}
 
          
