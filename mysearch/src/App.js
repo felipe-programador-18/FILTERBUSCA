@@ -6,6 +6,10 @@ const Url = 'https://randomuser.me/api/'
 const funcionario = ['Felipe', 'Gustavo', 'Henrique','Fatima','Cristina']
 const Emplooyee = ['Programmer', 'developer','thought about my life']
 
+const Mapreduce = [1,2,4,5,6,7,8,10]
+const Workpense = Mapreduce.map((Mapreduce) =>
+     <li> {Mapreduce*2}</li>
+)
 
 function App() {
   const [data, setdata] = useState(Url)
@@ -45,9 +49,11 @@ function App() {
        ))}
         
        </ul>
-      
+        <ul> {Workpense} </ul>
           
           {JSON.stringify(data)}
+
+         
     </div>
   );
 }
